@@ -1,6 +1,7 @@
 function testWebP(callback) {
 
     var webP = new Image();
+    console.log(2);
     webP.onload = webP.onerror = function () {
     callback(webP.height == 2);
     };
